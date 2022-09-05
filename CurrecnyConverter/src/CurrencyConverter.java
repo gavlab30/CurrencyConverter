@@ -25,8 +25,6 @@ public class CurrencyConverter {
 
 		System.out.println("$australian: " + exchangeRates[6]);
 
-		System.out.println("$australian: " + exchangeRates[6]);
-
 		System.out.println("Exchange rates: " + exchangeRates[exchangeRates.length - 1]);
 
 	}
