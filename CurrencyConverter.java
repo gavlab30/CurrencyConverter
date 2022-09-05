@@ -1,34 +1,34 @@
 public class CurrencyConverter {
-		int rupee;
-		int dirham;
-		int real;
-		int chileanPeso;
-		int mexicanPeso;
-		int _yen;
-		int $australian;
-		//int Ruppe = 63;
-	
-	 void printCurrency() {
-		// exchange rates for 1 us dollar
-		rupee = 63; //india
-		dirham = 3; //UAE
-		real = 3; //brazil
-		chileanPeso = 595;
-		mexicanPeso = 18;
-		_yen = 107;
-		$australian = 2;
-		
-		
-		System.out.println("rupee: " + rupee);
-		System.out.println("dirham: " + dirham);
-		System.out.println("real: " + real);
-		System.out.println("chilean peso: " + chileanPeso);
-		System.out.println("mexican peso: " + mexicanPeso);
-		System.out.println("yen: " + _yen);
-		System.out.println("australian: " + $australian);
-		
+	// int rupee;
+	// int dirham;
+	// int real;
+	// int chileanPeso;
+	// int mexicanPeso;
+	// int _yen;
+	// int $australian;
+	// int Ruppe = 63;
+
+	void printCurrency() {
+		double[] exchangeRates = new double[] { 63.0, 3.0, 3.0, 595.0, 18.0, 107.0, 2.0 };
+
+		System.out.println("rupee: " + exchangeRates[0]);
+
+		System.out.println("dirham: " + exchangeRates[1]);
+
+		System.out.println("real: " + exchangeRates[2]);
+
+		System.out.println("chilean_peso: " + exchangeRates[3]);
+
+		System.out.println("mexican_peso: " + exchangeRates[4]);
+
+		System.out.println("_yen: " + exchangeRates[5]);
+
+		System.out.println("$australian: " + exchangeRates[6]);
+
+		System.out.println("Exchange rates: " + exchangeRates[exchangeRates.length - 1]);
+
 	}
-	
+
 	public static void main(String[] args) {
 		CurrencyConverter cc = new CurrencyConverter();
 		cc.printCurrency();
